@@ -8,12 +8,12 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Đổi thành URL GitHub Pages của bạn
-  url: 'https://YOUR_GITHUB_USERNAME.github.io',
+  url: 'https://dev-anhkn.github.io',
   // Đổi thành tên repo của bạn
   baseUrl: '/camunda-30days/',
 
-  organizationName: 'YOUR_GITHUB_USERNAME', // tên GitHub account
-  projectName: 'camunda-30days',            // tên repo
+  organizationName: 'dev-anhkn', // tên GitHub account
+  projectName: 'camunda-30d',            // tên repo
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
