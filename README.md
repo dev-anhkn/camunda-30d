@@ -12,8 +12,8 @@
 
 ```bash
 # 1. Clone repo
-git clone https://github.com/YOUR_USERNAME/camunda-30days
-cd camunda-30days
+git clone https://github.com/dev-anhkn/camunda-30d
+cd camunda-30d
 
 # 2. Xem docs local
 npm install
@@ -23,7 +23,7 @@ npm start
 
 ## Đọc online
 
-👉 https://YOUR_USERNAME.github.io/camunda-30days/
+👉 https://dev-anhkn.github.io/camunda-30d/
 
 ## Cấu trúc
 

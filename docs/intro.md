@@ -37,8 +37,8 @@ Mỗi ngày một kiến thức về **Camunda 8** với **Java + Spring Boot + 
 Mỗi bài kèm code mẫu có thể chạy được ngay:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/camunda-30days
-cd camunda-30days/code/day01-architecture
+git clone https://github.com/dev-anhkn/camunda-30d
+cd camunda-30d/code/day01-architecture
 ```
 
 ## Bắt đầu
