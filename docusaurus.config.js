@@ -10,7 +10,7 @@ const config = {
   // Đổi thành URL GitHub Pages của bạn
   url: 'https://dev-anhkn.github.io',
   // Đổi thành tên repo của bạn
-  baseUrl: '/camunda-30days/',
+  baseUrl: '/camunda-30d/',
 
   organizationName: 'dev-anhkn', // tên GitHub account
   projectName: 'camunda-30d',            // tên repo
@@ -32,7 +32,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           editUrl:
-            'https://github.com/YOUR_GITHUB_USERNAME/camunda-30days/edit/main/',
+            'https://github.com/dev-anhkn/camunda-30d/edit/main/',
         },
         blog: false, // Tắt blog, chỉ dùng docs
         theme: {
@@ -59,7 +59,7 @@ const config = {
             label: 'Bắt đầu học',
           },
           {
-            href: 'https://github.com/YOUR_GITHUB_USERNAME/camunda-30days',
+            href: 'https://github.com/dev-anhkn/camunda-30d',
             label: 'GitHub',
             position: 'right',
           },
