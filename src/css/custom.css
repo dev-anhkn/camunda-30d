@@ -1,0 +1,37 @@
+/**
+ * Custom CSS cho 30 Ngày Camunda 8
+ */
+
+:root {
+  --ifm-color-primary: #FC5D0D;         /* Camunda orange */
+  --ifm-color-primary-dark: #e05209;
+  --ifm-color-primary-darker: #d44d08;
+  --ifm-color-primary-darkest: #af4007;
+  --ifm-color-primary-light: #fd6e2c;
+  --ifm-color-primary-lighter: #fd7538;
+  --ifm-color-primary-lightest: #fe8f5f;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(252, 93, 13, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #fd7538;
+  --ifm-color-primary-dark: #fd6820;
+  --ifm-color-primary-darker: #fc6114;
+  --ifm-color-primary-darkest: #e34e03;
+  --ifm-color-primary-light: #fd8250;
+  --ifm-color-primary-lighter: #fd895c;
+  --ifm-color-primary-lightest: #fe9e7b;
+  --docusaurus-highlighted-code-line-bg: rgba(253, 117, 56, 0.15);
+}
+
+/* Badge ngày */
+.badge--day {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-right: 8px;
+}

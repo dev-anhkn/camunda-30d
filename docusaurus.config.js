@@ -1,0 +1,107 @@
+// @ts-check
+const { themes: prismThemes } = require('prism-react-renderer');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: '30 Ngày Camunda 8',
+  tagline: 'Học Camunda 8 mỗi ngày một kiến thức — Java · Spring Boot · Self-managed',
+  favicon: 'img/favicon.ico',
+
+  // Đổi thành URL GitHub Pages của bạn
+  url: 'https://YOUR_GITHUB_USERNAME.github.io',
+  // Đổi thành tên repo của bạn
+  baseUrl: '/camunda-30days/',
+
+  organizationName: 'YOUR_GITHUB_USERNAME', // tên GitHub account
+  projectName: 'camunda-30days',            // tên repo
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
+  i18n: {
+    defaultLocale: 'vi',
+    locales: ['vi'],
+  },
+
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
+          editUrl:
+            'https://github.com/YOUR_GITHUB_USERNAME/camunda-30days/edit/main/',
+        },
+        blog: false, // Tắt blog, chỉ dùng docs
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      }),
+    ],
+  ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      navbar: {
+        title: '30 Ngày Camunda 8',
+        logo: {
+          alt: 'Camunda Logo',
+          src: 'img/logo.svg',
+        },
+        items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Bắt đầu học',
+          },
+          {
+            href: 'https://github.com/YOUR_GITHUB_USERNAME/camunda-30days',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Series',
+            items: [
+              { label: 'Giới thiệu', to: '/' },
+              { label: 'Ngày 1 – Architecture', to: '/day01-architecture' },
+            ],
+          },
+          {
+            title: 'Tài liệu tham khảo',
+            items: [
+              {
+                label: 'Camunda Docs',
+                href: 'https://docs.camunda.io',
+              },
+              {
+                label: 'Spring Zeebe SDK',
+                href: 'https://github.com/camunda/camunda-spring-boot-starter',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} — Built with Docusaurus`,
+      },
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+        additionalLanguages: ['java', 'yaml', 'bash', 'xml'],
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+    }),
+};
+
+module.exports = config;
